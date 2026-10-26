@@ -1,0 +1,29 @@
+:root{--bg:#0e0f0f;--ink:#e9e4d6;--paper:#e8dfc8;--paperink:#1b1a17;--red:#b3201b;--mute:#9a958a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:48px 0 24px;border-bottom:1px solid #2a2a28}
+.tag{font:700 12px/1 "Courier New",monospace;letter-spacing:.2em;color:var(--red);text-transform:uppercase}
+h1{font:700 clamp(28px,5vw,46px)/1.15 "Courier New",monospace;margin:10px 0;letter-spacing:.02em}
+h2{font:700 20px "Courier New",monospace;letter-spacing:.12em;text-transform:uppercase;border-bottom:2px solid var(--red);display:inline-block;padding-bottom:4px;margin-top:48px}
+.sub{color:var(--mute);margin:0}
+.video{position:relative;padding-top:56.25%;margin:28px 0;background:#000;border:1px solid #333}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.order{background:var(--paper);color:var(--paperink);padding:28px;margin:32px 0;border:1px solid #c9bd9d;position:relative;box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.order h3{font:700 22px "Courier New",monospace;margin:0 0 6px;letter-spacing:.08em}
+.order .mono{font-family:"Courier New",monospace}
+.stamp{position:absolute;top:18px;right:18px;border:3px solid var(--red);color:var(--red);font:700 14px "Courier New",monospace;padding:4px 10px;transform:rotate(-6deg);letter-spacing:.15em}
+.stats{display:flex;gap:24px;flex-wrap:wrap;margin:16px 0}.stats div{border-left:3px solid var(--red);padding-left:10px}
+.stats b{display:block;font:700 22px "Courier New",monospace}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font:700 18px "Courier New",monospace;letter-spacing:.1em;padding:14px 28px;margin-top:10px;text-transform:uppercase}
+.btn:hover{background:#8f1915}
+img{max-width:100%;display:block}.req{border:1px solid #333;margin:24px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.grid img{border:1px solid #333}
+ol li,ul li{margin-bottom:6px}a{color:var(--paper)}
+footer{margin-top:60px;padding:24px 0 40px;border-top:1px solid #2a2a28;color:var(--mute);font-size:14px}
+.small{font-size:14px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.stamp{position:static;display:inline-block;margin-bottom:10px}.order{padding:20px}.btn{display:block;text-align:center}}
+figure{margin:0}figcaption{font:12px "Courier New",monospace;color:var(--mute);letter-spacing:.1em;text-transform:uppercase;padding:6px 0}
+.hero{display:grid;grid-template-columns:1fr 240px;gap:24px;align-items:center;margin:28px 0}.hero .video{margin:0}
+.cta{text-align:center}.btn.big{display:block;font-size:20px;padding:20px 12px}.cta .small{color:var(--mute);margin:10px 0 0}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:14px}}
+.grid.three{grid-template-columns:1fr}
